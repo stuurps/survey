@@ -17,11 +17,6 @@ shinyUI(f7Page(
     f7SingleLayout(
         navbar = f7Navbar(
             title = "Tree Survey",
-            subtitle = subtitle = f7Link(
-                label = "View ID's",
-                src = "https://treesurvey.online/shiny/survey-view",
-                external = T
-            ),
             hairline = F,
             shadow = T,
             tags$script(
@@ -83,7 +78,6 @@ shinyUI(f7Page(
                         '
             )
         ),
-        
         f7Text("id_text", "ID"),
         f7Text("id_note", "Notes"),
         f7Button("run", "Submit", color = "teal"),
@@ -95,10 +89,9 @@ shinyUI(f7Page(
         toolbar = f7Toolbar(
             position = "bottom",
             f7Link(
-                label = "Trees of Bristol",
-                src = "https://bristoltrees.space/Tree/",
-                external = T
-            ),
+                label = "View ID's",
+                src = "https://treesurvey.online/shiny/survey-view",
+                external = T),
             f7Link(
                 label = "Bristol Tree Forum",
                 src = "https://bristoltreeforum.org/",
