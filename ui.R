@@ -17,7 +17,7 @@ shinyUI(f7Page(
     f7SingleLayout(
         navbar = f7Navbar(
             title = "Tree Survey",
-            subtitle = subtitle = f7Link(
+            subtitle =  f7Link(
                 label = "View ID's",
                 src = "https://treesurvey.online/shiny/survey-view",
                 external = T
