@@ -47,7 +47,7 @@ shinyServer(function(input, output, session) {
         print((input$long))
         print(as.character(Sys.time()))
         
-        md <- read.csv("id_output.csv")
+        md <- read.csv("/srv/shiny-server/survey/id_output.csv")
         row_id <- nrow(md)+1
         id <- as.character(input$id_text)
         notes <- as.character(input$id_note)
@@ -56,7 +56,7 @@ shinyServer(function(input, output, session) {
         time <- as.character(Sys.time())
         tmp <- data.frame(row_id,id,notes,lat,lng,time)
         md <- rbind(md, tmp)
-        write.csv(md, "id_output.csv", row.names = F)
+        write.csv(md, "/srv/shiny-server/survey/id_output.csv", row.names = F)
         
         #Set up
         
