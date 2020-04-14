@@ -93,12 +93,12 @@ shinyUI(f7Page(
             position = "bottom",
             f7Link(
                 label = "Home",
-                src = "https://treesurvey.online/",
+                src = "https://thetreeid.com/",
                 external = T
             ),
             f7Link(
                 label = "Map",
-                src = "https://treesurvey.online/shiny/survey-view",
+                src = "https://thetreeid.com/shiny/survey-view",
                 external = T
             )
         )
