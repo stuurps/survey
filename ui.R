@@ -18,7 +18,7 @@ shinyUI(f7Page(
         navbar = f7Navbar(
             title = "Tree Survey",
 
-            subtitle = a("Get In Touch", href = "mailto:barkerstu@gmail.com"),
+            subtitle = a("Get In Touch", href = "mailto:thetreeid@gmail.com"),
 
             hairline = F,
             shadow = T,
